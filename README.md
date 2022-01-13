@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# INVENTORY TRACKING APP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+An inventory tracking app. 
 
-In the project directory, you can run:
 
-### `npm start`
+#### [Server-Side Repository](https://github.com/rita-morozova/inventory-tracking-backend)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### [The demo can be viewed on Netlify](https://inventory-tracking-mm.netlify.app/) 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Main Features:
+* Users can see all products
+* Users can see all suppliers
+* Users can add products to the database
+* Users can edit products
+* Users can delete products
+* Users can filter a list of products
+* Users can export the list of products to CSV
 
-### `npm test`
+## Getting Started
+- Navigate to the [server-side-repo](https://github.com/rita-morozova/inventory-tracking-backend), fork and clone it.
+- Navigate to `inventory-tracking-backend`
+- Run `bundle install` to install all dependencies 
+- Run `rails db:create` & `rails db:migrate` to create the database
+- Run `rails db:seed` (to seed the database with the test data) 
+- Start the server by running `rails s`
+- Once the server is running, fork and clone this repo. From the main directory run `npm install` to install all dependencies
+- Run `npm start` to start the application
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## To Run Tests
+- Run `rspec --format documentation`
 
-### `npm run build`
+### Build with
+Ruby on Rails & React
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Tools
+* PostgreSQL
+* MDBootsrap
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### A list of products
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![List of products](https://res.cloudinary.com/diexi8g0j/image/upload/v1642108772/Screen_Shot_2022-01-13_at_1.19.25_PM_rqigwu.png)
 
-### `npm run eject`
+### User can filter products
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Filter products](https://res.cloudinary.com/diexi8g0j/image/upload/v1642103350/Screen_Shot_2022-01-13_at_11.45.23_AM_j2py33.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### User can export data to CSV
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Export to CSV](https://res.cloudinary.com/diexi8g0j/image/upload/v1642103350/Screen_Shot_2022-01-13_at_11.47.22_AM_mpuukf.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Add/Edit Product
 
-## Learn More
+![Add/Edit](https://res.cloudinary.com/diexi8g0j/image/upload/v1642103349/Screen_Shot_2022-01-13_at_11.45.41_AM_s5vh0u.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### User can see a list of suppliers
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Suppliers List](https://res.cloudinary.com/diexi8g0j/image/upload/v1642103349/Screen_Shot_2022-01-13_at_11.47.34_AM_uaquuw.png)
 
-### Code Splitting
+### Features to implement:
+* Ability to create “shipments” and assign inventory to the shipment, and adjust inventory appropriately
+* Ability to create warehouses/locations and assign inventory to specific locations
+* Add more tests
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Created By _**Margarita Morozova**_
